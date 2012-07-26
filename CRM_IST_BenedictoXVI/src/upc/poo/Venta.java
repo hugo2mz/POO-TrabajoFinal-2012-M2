@@ -29,11 +29,8 @@ public class Venta {
         this.empresa = empresa;
         this.estado = estado;
         this.subtotal = subtotal;
-        //this.igv = igv;
-        //this.total = total;
         this.moneda = moneda;
-        this.observaciones = observaciones;
-        
+        this.observaciones = observaciones;        
         calcularIgv();
         calcularTotal();
         
