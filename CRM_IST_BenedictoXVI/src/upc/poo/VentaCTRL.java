@@ -13,7 +13,7 @@ class VentaCTRL implements Comparator {
         return ventas;   //retorna el array ventas completo, ordenado por fecha de vencimiento
     }
 
-    public void nuevoProspecto(Venta venta) {
+    public void nuevaVenta(Venta venta) {
         ventas.add(venta);    //agrega una Venta al array de ventas
     }    
     
