@@ -48,8 +48,20 @@ public class VentaCTRLTest {
                             ventas.getVentas().get(i).getTotal() + "   "  +           
                         "");
         }
-        Assert.assertEquals(ventas.getVentas().size(), 5);
+        Assert.assertEquals(ventas.getVentas().size(), 4);
     }    
+
+    @Test
+    public void DeboPoderCalcularElIgvDeLaVenta() {        
+        Venta venta1 = new Venta("Java SE", "Factura", "001-001", "ABS Soluciones", "11-06-2009", "11-07-2009", "30-06-2009", "cancelada", 100.00, "dolares", "Falta enviar comprobante al cliente");
+        Assert.assertEquals(18, venta1.getIgv(),0.0);        
+    }
+
+    @Test
+    public void DeboPoderCalcularElTotalDeLaVenta() {        
+        Venta venta1 = new Venta("Java SE", "Factura", "001-001", "ABS Soluciones", "11-06-2009", "11-07-2009", "30-06-2009", "cancelada", 100.00, "dolares", "Falta enviar comprobante al cliente");
+        Assert.assertEquals(118.00, venta1.getTotal(),0.0);        
+    }
     
     
 }
