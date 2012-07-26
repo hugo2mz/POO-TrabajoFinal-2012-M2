@@ -12,4 +12,6 @@ public class VentaCTRLTest {
         Assert.assertNotNull(ventas.getVentas());
     }
 
+    
+    
 }
