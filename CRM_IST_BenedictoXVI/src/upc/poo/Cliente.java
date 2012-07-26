@@ -4,15 +4,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Prospecto extends Contacto {
-    private Date fechaContacto;
+public class Cliente extends Contacto {
+    private Date fechaCliente;    //fecha en que pasa a ser cliente
 
-    //String nombres, String aPaterno, String aMaterno, String email, String dni, String telefono, String fechaContacto
-    public Prospecto() {
+    public Cliente() {
         super();
     }
-
-    public Prospecto(String nombres, String aPaterno, String aMaterno, String email, String dni, String telefono, String strFechaContacto) {
+    
+    public Cliente(String nombres, String aPaterno, String aMaterno, String email, String dni, String telefono, String strFechaCliente) {
         super();
         this.nombres = nombres;
         this.aPaterno = aPaterno;
@@ -23,14 +22,14 @@ public class Prospecto extends Contacto {
         
         SimpleDateFormat formatoDelTexto = new SimpleDateFormat("dd-MM-yyyy");
         try {
-            this.fechaContacto = formatoDelTexto.parse(strFechaContacto);
+            this.fechaCliente = formatoDelTexto.parse(strFechaCliente);
         } catch (ParseException ex) {
             ex.printStackTrace();
         }      
     }
 
     public Date getFechaContacto() {
-        return fechaContacto;
+        return fechaCliente;
     }
     
 }
