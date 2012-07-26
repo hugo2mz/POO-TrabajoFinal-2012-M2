@@ -14,9 +14,12 @@ public class ProspectoCTRL implements Comparator {
         prospectos.add(prospecto);    //agrega un prospecto al array de prospectos
     }    
     
+    /*
     public void formatearProspectos() {
         prospectos.clear();    //OJO: Solo para pruebas: Elimina todos los prospectos
-    }    
+    } 
+    * 
+    */
 
     public int compare(Object o1, Object o2) { //Define el orden natural
         Prospecto prospecto1 = (Prospecto) o1;
