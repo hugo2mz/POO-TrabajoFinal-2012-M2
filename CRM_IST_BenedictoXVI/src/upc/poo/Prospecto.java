@@ -21,9 +21,8 @@ public class Prospecto extends Contacto {
         this.dni = dni;
         this.telefono = telefono;
         
-        SimpleDateFormat formatoDelTexto = new SimpleDateFormat("dd-MM-yyyy");
         try {
-            this.fechaContacto = formatoDelTexto.parse(strFechaContacto);
+            this.fechaContacto = (new SimpleDateFormat("dd-MM-yyyy")).parse(strFechaContacto);
         } catch (ParseException ex) {
             ex.printStackTrace();
         }      
