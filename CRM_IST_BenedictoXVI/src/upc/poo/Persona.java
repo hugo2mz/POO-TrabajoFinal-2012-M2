@@ -3,7 +3,7 @@ package upc.poo;
 import java.text.DateFormat;
 import java.util.*;
 
-
+//////OJO: ITALO, AMERICO: ESTE ES SOLO UN EJEMPLO DE COMO ORDENAR ARRAYLISTS
 public class Persona implements Comparable { 
     private String nombre; 
     private String apellidos; 
@@ -69,16 +69,12 @@ public class Persona implements Comparable {
         }        
 
     } 
-
-
-    
     
     public static void pintaLista(List lista) { 
         for(int i=0;i<lista.size();i++) { 
             System.out.println(lista.get(i)); 
         } 
     } 
-    
 
     public static void main(String[] args) { 
 
@@ -134,6 +130,3 @@ class NacimientoPersonaComparator implements Comparator {
         return persona1.getFechaNacimiento().compareTo(persona2.getFechaNacimiento());
     } 
 } 
-
-
-

@@ -28,8 +28,11 @@ public class Cliente extends Contacto {
         }      
     }
 
-    public Date getFechaContacto() {
+    public Date getFechaCliente() {
         return fechaCliente;
+    }
+    
+    public void convertirAProspecto() {
     }
     
 }
