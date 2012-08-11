@@ -18,7 +18,7 @@ public class DBAlumno {
         Alumno alumno2 = new Alumno("12345679", "José", "Rodríguez", "Poma", "jpma@tt.pe", "528-5431", "987123411", "P", "27-09-2008", "");
         Alumno alumno3 = new Alumno("12345670", "Andrés", "Ramos", "Huaita", "hramos@todsa.pe", "613-5439", "987123422", "P", "19-02-2010", "");
         Alumno alumno4 = new Alumno("12345611", "Enrique", "Salas", "Taipe", "esalas@jalo.com.pe", "719-5430", "987123433", "P", "01-10-2011", "");
-        Alumno alumno5 = new Alumno("12345622", "Manuel", "Montoya", "Santos", "mmontoya@loisa.com.pe", "640-5431", "987123444", "P", "11-09-2012", "");
+        Alumno alumno5 = new Alumno("12345622", "Manuel", "Montoya", "Santos", "mmontoya@loisa.com.pe", "640-5431", "987123444", "P", "10-08-2012", "");
         Alumno alumno6 = new Alumno("12345633", "Javier", "Rojas", "Meza", "javier.rojas@comteperu.com", "756-5432", "987123455", "P", "29-04-2011", "");
         Alumno alumno7 = new Alumno("12345644", "Antero", "Melgar", "Chaparro", "amelgar@ddes.com", "799-5433", "987123466", "P", "31-03-2012", "");
         Alumno alumno8 = new Alumno("12345644", "Miguel", "Ramos", "Poma", "mramos@tanta.pe", "612-5535", "987123477", "P", "31-04-2012", "");

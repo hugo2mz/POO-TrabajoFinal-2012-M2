@@ -19,11 +19,19 @@ public class Alumno implements IAlumno, Comparator {
     private String celular;
     private String flagTipoAlumno; //El tipo puede ser: P="PROSPECTO" ó C="CLIENTE"
     private Date fechaContacto;    //fecha en que es dado de alta como prospecto
-    private Date fechaCliente;    //fecha en que pasa a ser cliente
+    private Date fechaCliente;    //fecha en que pasa a ser cliente   
+    
+    private ArrayList<GrupoDeEstudio> grupoDeEstudio;
 
-    public Alumno() {}
+    public Alumno() {
+        //Relación de asociación con GrupoDeEstudio para tener lista de GrupoDeEstudio's en el q está incrito el alumno
+        this.grupoDeEstudio = new ArrayList<GrupoDeEstudio>();
+    }
 
     public Alumno(String dni, String nombres, String aPaterno, String aMaterno, String email, String telefono, String celular, String flagTipoAlumno, String strFechaContacto, String strFechaCliente) {
+        //Relación de asosiación con GrupoDeEstudio
+        this.grupoDeEstudio = new ArrayList<GrupoDeEstudio>();
+        
         this.dni = dni;
         this.nombres = nombres;
         this.aPaterno = aPaterno;
@@ -50,6 +58,9 @@ public class Alumno implements IAlumno, Comparator {
     }
 
     public Alumno(String dni, String nombres, String aPaterno, String aMaterno, String email, String telefono, String celular, String flagTipoAlumno, Date fechaComodin) {
+        //Relación de asosiación con GrupoDeEstudio
+        this.grupoDeEstudio = new ArrayList<GrupoDeEstudio>();
+        
         this.dni = dni;
         this.nombres = nombres;
         this.aPaterno = aPaterno;
@@ -354,12 +365,14 @@ public class Alumno implements IAlumno, Comparator {
         Collections.sort(tmp_alumnos8, new Alumno());//retorna el array alumnos completo, ordenado por fecha de Contacto
         return tmp_alumnos8;
     }
+
     
-    public int compare(Object o1, Object o2) { //Define el orden natural
+    //Define el orden natural
+    public int compare(Object o1, Object o2) {
         IAlumno alumno1 = (Alumno) o1;
         IAlumno alumno2 = (Alumno) o2;
         
-        if(alumno1.getFlagTipoAlumno().equals("C")) {            
+        if(alumno1.getFlagTipoAlumno().equals("C")) {
             return alumno1.getFechaCliente().compareTo(alumno2.getFechaCliente());
         } else if(alumno1.getFlagTipoAlumno().equals("P")) {
             return alumno1.getFechaContacto().compareTo(alumno2.getFechaContacto());
