@@ -109,10 +109,12 @@ public class AlumnoVIEW implements IAlumnoVIEW {
     // Método para mostrar al usuario las opciones que tiene
     private void menuPrincipalAlumno() {
         System.out.println("CRM >> Alumnos:\n================");
+        System.out.println("===========Prospecto=============");
         System.out.println("1: Buscar Prospectos");
         System.out.println("2: Listar todos los Prospectos");
         System.out.println("3: Nuevo Prospecto");
         System.out.println("=================================");
+        System.out.println("=============Cliente=============");
         System.out.println("4: Buscar Clientes");
         System.out.println("5: Listar todos los Clientes");
         System.out.println("6: Nuevo Cliente");
