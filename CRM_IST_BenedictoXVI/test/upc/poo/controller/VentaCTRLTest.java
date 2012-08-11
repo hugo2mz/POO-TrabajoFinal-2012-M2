@@ -1,5 +1,7 @@
-package upc.poo;
+package upc.poo.controller;
 
+import upc.poo.controller.VentaCTRL;
+import upc.poo.model.Venta;
 import java.text.SimpleDateFormat;
 import org.junit.Assert;
 import org.junit.Test;

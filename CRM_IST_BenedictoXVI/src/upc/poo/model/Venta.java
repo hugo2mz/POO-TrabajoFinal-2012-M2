@@ -1,4 +1,4 @@
-package upc.poo;
+package upc.poo.model;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

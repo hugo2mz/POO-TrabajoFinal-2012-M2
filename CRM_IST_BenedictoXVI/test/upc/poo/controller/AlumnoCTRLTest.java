@@ -1,4 +1,4 @@
-package upc.poo;
+package upc.poo.controller;
 
 import upc.poo.controller.AlumnoCTRL;
 import upc.poo.model.Alumno;

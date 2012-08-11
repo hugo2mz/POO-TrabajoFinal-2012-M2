@@ -1,5 +1,6 @@
 package upc.poo;
 
+import upc.poo.model.Venta;
 import junit.framework.Assert;
 import org.junit.AfterClass;
 import org.junit.Test;

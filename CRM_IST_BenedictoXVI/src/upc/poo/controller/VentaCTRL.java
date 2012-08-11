@@ -1,5 +1,6 @@
-package upc.poo;
+package upc.poo.controller;
 
+import upc.poo.model.Venta;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

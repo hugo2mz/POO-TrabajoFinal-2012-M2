@@ -16,8 +16,8 @@ public class AlumnoCTRL {
 
     public AlumnoCTRL() {}
     
-    public AlumnoCTRL(IAlumnoVIEW vistaCliente, IAlumno modeloCliente) {
-        this.vistaAlumno = vistaCliente;
+    public AlumnoCTRL(IAlumnoVIEW vistaAlumno, IAlumno modeloCliente) {
+        this.vistaAlumno = vistaAlumno;
         this.modeloAlumno = modeloCliente;
     }
     
@@ -27,7 +27,7 @@ public class AlumnoCTRL {
         if (evento == IAlumnoVIEW.NUEVOPROSPECTO) {
             String mensaje = "";
             String dni = vistaAlumno.getTextBoxF("Nuevo Prospecto >> DNI");
-//String flagTipoAlumno, String dni, String nombres, String aPaterno, String aMaterno, String email, String telefono, String celular            
+//String flagTipoAlumno, String dni, String nombres, String aPaterno, String aMaterno, String email, String telefono, String celular
             if ( modeloAlumno.nuevoRegistro(
                     "P",
                     dni,
